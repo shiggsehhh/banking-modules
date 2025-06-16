@@ -75,3 +75,49 @@ INSERT INTO issues (date_raised, description, status, subject, customer_id, bran
 ('2025-06-11', 'ATM at Branch A is out of cash.', 'RESOLVED', 'ATM Maintenance', 27, 'Anna Nagar'),
 ('2025-06-15', 'Client wants to update personal information but form is missing.', 'OPEN', 'Data Update Form', 25, 'Anna Nagar'),
 ('2025-06-08', 'Complaint about long waiting times at the teller counter.', 'CLOSED', 'Teller Queue Management', 26, 'Anna Nagar');
+
+-- Payments for Akash Sharma (Original Loan: 150000.00)
+INSERT INTO loan_payment (loan_id, customer_name, amount_paid, payment_date, branch_name) VALUES
+(5, 'Akash Sharma', 10000.00, '2025-06-01', 'Anna Nagar'),
+(5, 'Akash Sharma', 15000.00, '2025-06-15', 'Anna Nagar'),
+(5, 'Akash Sharma', 10000.00, '2025-07-01', 'Anna Nagar');
+
+-- Payments for Deepika Singh (Original Loan: 120000.00)
+INSERT INTO loan_payment (loan_id, customer_name, amount_paid, payment_date, branch_name) VALUES
+(8, 'Deepika Singh', 8000.00, '2025-06-03', 'Anna Nagar'),
+(8, 'Deepika Singh', 12000.00, '2025-06-18', 'Anna Nagar'),
+(8, 'Deepika Singh', 8000.00, '2025-07-03', 'Anna Nagar');
+
+-- Payments for Fathima Khan (Original Loan: 90000.00)
+INSERT INTO loan_payment (loan_id, customer_name, amount_paid, payment_date, branch_name) VALUES
+(10, 'Fathima Khan', 9000.00, '2025-06-10', 'Anna Nagar'),
+(10, 'Fathima Khan', 9000.00, '2025-07-10', 'Anna Nagar');
+
+-- Payments for Hema Sridhar (Original Loan: 50000.00)
+INSERT INTO loan_payment (loan_id, customer_name, amount_paid, payment_date, branch_name) VALUES
+(12, 'Hema Sridhar', 5000.00, '2025-06-15', 'Anna Nagar'),
+(12, 'Hema Sridhar', 5000.00, '2025-07-15', 'Anna Nagar');
+
+-- Payments for Kartik Iyer (Original Loan: 400000.00)
+INSERT INTO loan_payment (loan_id, customer_name, amount_paid, payment_date, branch_name) VALUES
+(15, 'Kartik Iyer', 40000.00, '2025-06-02', 'Anna Nagar'),
+(15, 'Kartik Iyer', 40000.00, '2025-06-16', 'Anna Nagar'),
+(15, 'Kartik Iyer', 40000.00, '2025-07-02', 'Anna Nagar');
+
+-- Payments for Manish Kumar (Original Loan: 130000.00)
+INSERT INTO loan_payment (loan_id, customer_name, amount_paid, payment_date, branch_name) VALUES
+(17, 'Manish Kumar', 13000.00, '2025-06-08', 'Anna Nagar'),
+(17, 'Manish Kumar', 13000.00, '2025-07-08', 'Anna Nagar');
+
+-- Payments for Rahul Gupta (Original Loan: 85000.00)
+INSERT INTO loan_payment (loan_id, customer_name, amount_paid, payment_date, branch_name) VALUES
+(21, 'Rahul Gupta', 8500.00, '2025-06-14', 'Anna Nagar'),
+(21, 'Rahul Gupta', 8500.00, '2025-07-14', 'Anna Nagar');
+
+-- Additional payments (mix, for varied dates/amounts)
+INSERT INTO loan_payment (loan_id, customer_name, amount_paid, payment_date, branch_name) VALUES
+(5, 'Akash Sharma', 5000.00, '2025-07-20', 'Anna Nagar'),
+(8, 'Deepika Singh', 7000.00, '2025-07-22', 'Anna Nagar'),
+(15, 'Kartik Iyer', 20000.00, '2025-07-25', 'Anna Nagar'),
+(17, 'Manish Kumar', 5000.00, '2025-07-28', 'Anna Nagar');
+DESCRIBE customer;
